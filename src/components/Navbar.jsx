@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
-//import logo from 'src/Images/logo.png'; 
-//import loginIcon from 'src/Images/login.png'; 
+
 
 
 export default function Navbar() {
