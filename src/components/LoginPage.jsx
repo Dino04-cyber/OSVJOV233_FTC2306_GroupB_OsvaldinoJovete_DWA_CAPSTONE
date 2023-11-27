@@ -16,7 +16,7 @@ function LoginPage() {
         const authListener = supabase.auth.onAuthStateChange((event, session) => {
             if (event === "SIGNED_IN") {
                 console.log("User signed in:", session.user);
-                navigate("/dashboard");
+                navigate("/");
             } else if (event === "SIGNED_OUT") {
                 console.log("User signed out");
                 navigate("/");
