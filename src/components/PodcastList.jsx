@@ -119,7 +119,7 @@ export default function PodcastList() {
                         image={showPreview.image}
                         description={showPreview.description}
                         text={showPreview.description}
-                        limit={2000}
+                        limit={200}
                         seasons={showPreview.seasons}
                         onClose={handleClose}
                         showSeasons={() => toggleSeasonId(showPreview.id)}
