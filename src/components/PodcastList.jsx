@@ -102,7 +102,7 @@ export default function PodcastList() {
             <div className="">
                 <Search onSearch={handleSearchResults}/>
             </div>
-
+ 
 
             <div className="podcast-list">
 
