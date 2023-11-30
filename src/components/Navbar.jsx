@@ -6,7 +6,7 @@ export default function Navbar() {
         <img src="https://i.postimg.cc/pXJWT0jD/logo.png" alt="Podcast Logo" className="logo" />
       </div>
       <div>
-        <button className='favbtn'>Favourites</button>
+        <button className='button'>Favourites</button>
       </div>
     </div>
   );
