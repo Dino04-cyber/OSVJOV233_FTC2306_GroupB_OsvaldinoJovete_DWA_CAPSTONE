@@ -93,8 +93,6 @@ export default function PodcastList() {
                 <Carousel />
             </div>
 
-            <h4 className="podcast-title">All Sloptify Podcasts</h4>
-
             <div className="sort">
                 <Sort onSortChange={handleSortChange} />
             </div>
