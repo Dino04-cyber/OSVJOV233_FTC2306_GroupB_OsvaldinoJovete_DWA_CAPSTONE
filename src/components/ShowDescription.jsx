@@ -40,16 +40,16 @@ export default function ShowDescription (showId) {
 
                 <div className="bottom-buttons">
                     {!showId.isExpanded && (
-                        <button className="preview-read-more" onClick={toggleReadMore}>
+                        <button className="button" onClick={toggleReadMore}>
                             Read More
                         </button>
                     )}
 
-                    <button onClick={showId.onClose} className="preview-close" >
+                    <button onClick={showId.onClose} className="button" >
                         Close
                     </button>
 
-                    <button  onClick={showId.showSeasons} className="preview-seasons">Seasons</button>
+                    <button  onClick={showId.showSeasons} className="button1">Seasons</button>
                 </div>
             </div>
         </div>
