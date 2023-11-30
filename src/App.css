@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   margin-top: 200px;
   box-sizing: border-box;
@@ -6,11 +7,13 @@ body {
   background-color: black;
 }
 
+/* Sorting Styles */
 .sort {
   margin-bottom: 10px;
   margin-left: 10px;
 }
 
+/* Navbar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -23,6 +26,7 @@ body {
   width: 100%;
   z-index: 2000;
 }
+
 .logo-container {
   flex-grow: 1;
 }
@@ -39,36 +43,13 @@ body {
   width: 30px;
 }
 
-
-/* Search*/
-
+/* Search Styles */
 .search-container {
   display: flex; 
   flex-direction: column;
 }
 
-.searchbtn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(34, 34, 34);
-  background: linear-gradient(
-    142.99deg,
-    rgba(217, 217, 217, 0.63) 15.53%,
-    rgba(243, 243, 243, 0.63) 88.19%
-  );
-  box-shadow: 0px 12px 24px -1px rgba(0, 0, 0, 0.18);
-  border-color: rgba(7, 4, 14, 0);
-  border-radius: 50px;
-  block-size: 20px;
-  margin: 7px auto;
-  margin-right: auto;
-  padding: 18px 15px;
-  outline: none;
-  text-align: center;
-  width: 200px;
-  transition: 0.5s;
-}
+.searchbtn, 
 .search-button {
   display: flex;
   justify-content: center;
@@ -89,24 +70,27 @@ body {
   transition: 0.5s;
 }
 
-.searchbtn:hover,
-.search-button:hover {
-  width: 240px;
-}
-
-.searchbtn:focus,
-.search-button:focus {
-  width: 280px;
-}
-
-.sortopt{
+.search-button{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Podcast Display */
+.searchbtn:hover, .search-button:hover {
+  width: 240px;
+}
 
+.searchbtn:focus, .search-button:focus {
+  width: 280px;
+}
+
+.sortopt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Podcast Display Styles */
 .podcast-title {
   display: flex;
   justify-content: center;
@@ -116,60 +100,57 @@ body {
 }
 
 .podcast-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
 }
 
 .show-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .show-item > img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .show-item > h6 {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .podcast-list {
-    margin: 10px;
+  margin: 10px;
 }
 
-/* Preview Popup */
-
+/* Preview Popup Styles */
 .show-preview {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    background-color:#4245499f;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: #4245499f;
 }
 
-.show-content{
-    text-align: center;
-    background-color: #000000;
-    height: 100%;
+.show-content {
+  text-align: center;
+  background-color: #000000;
+  height: 100%;
 }
 
 .preview-image {
-    height: auto;
-    width: 40%; 
-    margin-top: 10px;
-    border-radius: 20px;
+  height: auto;
+  width: 40%; 
+  margin-top: 10px;
+  border-radius: 20px;
 }
 
 .preview-title {
@@ -177,39 +158,14 @@ body {
 }
 
 .preview-description {
-    margin: 10px;
-   max-height: 400px;
-   overflow-y: auto;
-   font-size: 13px;
-   color: white;
-    
-}
-
-.preview-read-more {
-  padding: 10px 15px;
-  font-size: 14px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color:#6432C9;
-  color: #fff;
-}
-
-.preview-close {
-  padding: 10px 15px;
-  font-size: 14px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #6432C9;
-  color: #fff;
-}
-
-.preview-season {
+  margin: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  font-size: 13px;
   color: white;
 }
 
-.preview-seasons {
+.preview-read-more, .preview-close, .preview-seasons {
   padding: 10px 15px;
   font-size: 14px;
   border: none;
@@ -219,16 +175,16 @@ body {
   color: #fff;
 }
 
+/* Bottom Buttons Styles */
 .bottom-buttons {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
 }
 
-/* Carousel CSS */
-
+/* Carousel CSS Styles */
 .carousel-box {
-  z-index: 900; /* Lower than the z-index of the navbar */
+  z-index: 900;
   margin-top: 60px;
   display: flex;
   align-items: center;
@@ -242,13 +198,13 @@ body {
 }
 
 .carousel-images {
-background: #16161d;
-border: 2px solid #555555;
-border-radius: 4px;
-position: relative;
-transform-style: preserve-3d;
-will-change: transform;
-transition: transform .5s;
+  background: #16161d;
+  border: 2px solid #555555;
+  border-radius: 4px;
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform .5s;
   border-radius: 10px;
   box-shadow: 0px 0px 7px #666;
   max-width: none;
@@ -256,12 +212,11 @@ transition: transform .5s;
   scroll-snap-align: start;
 }
 
-.carousel-images:hover{
-transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+.carousel-images:hover {
+  transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
 }
 
-/* Show Seasons CSS */
-
+/* Show Seasons CSS Styles */
 .season-details {
   background-color: #000000;
   z-index: 9999;
@@ -348,7 +303,7 @@ transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
   background-color: #003b80;
 }
 
-.season-date {
+.season-date, .season-genre {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -357,19 +312,13 @@ transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
   margin-bottom: 10px;
 }
 
-.season-genre {
-  margin: 10px;
-  font-size: 14px;
-  color: #888;
-  margin-bottom: 10px;
-  margin-bottom: 20px;
-}
-
 .episode-container {
-  max-width: 330px;
-  padding-left: 6px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
 }
 
+/* Fixed Audio Player Styles */
 .fixed-audio-player {
   position: fixed;
   bottom: 0;
@@ -426,7 +375,7 @@ transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
 }
 
 .episodes audio::-webkit-media-controls-panel {
-  background-color:white;
+  background-color: white;
   border-radius: 3px;
 }
 
@@ -438,117 +387,7 @@ transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
   margin-left: 5px;
 }
 
-/* LOGIN */
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 0.4em;
-  background-color: #171717;
-  border-radius: 25px;
-  transition: .4s ease-out;
-}
-
-.form:hover {
-  transform: scale(1.01);
-  border: 1px solid black;
-}
-
-#heading {
-  text-align: center;
-  margin: 2em;
-  color: rgb(255, 255, 255);
-  font-size: 1.2em;
-}
-
-.field {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-  border-radius: 25px;
-  padding: 0.6em;
-  border: none;
-  outline: none;
-  color: white;
-  background-color: #171717;
-  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-}
-
-.input-icon {
-  height: 1.3em;
-  width: 1.3em;
-  fill: white;
-}
-
-.input-field {
-  background: none;
-  border: none;
-  outline: none;
-  width: 100%;
-  color: #d3d3d3;
-}
-
-.form .btn {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin-top: 2.5em;
-}
-
-.button1 {
-  padding: 0.5em;
-  padding-left: 1.1em;
-  padding-right: 1.1em;
-  border-radius: 5px;
-  margin-right: 0.5em;
-  border: none;
-  outline: none;
-  transition: .4s ease-in-out;
-  background-color: #252525;
-  color: white;
-}
-
-.button1:hover {
-  background-color: black;
-  color: white;
-}
-
-.button2 {
-  padding: 0.5em;
-  padding-left: 2.3em;
-  padding-right: 2.3em;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  transition: .4s ease-in-out;
-  background-color: #252525;
-  color: white;
-}
-
-.button2:hover {
-  background-color: black;
-  color: white;
-}
-
-.button3 {
-  margin-bottom: 3em;
-  padding: 0.5em;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  transition: .4s ease-in-out;
-  background-color: #252525;
-  color: white;
-}
-
-.button3:hover {
-  background-color: red;
-  color: white;
-}
-/* LOGIN_CLOSE */
+/* Login Loader Styles */
 .loader {
   width: 60px;
   display: flex;
