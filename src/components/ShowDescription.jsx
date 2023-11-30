@@ -49,7 +49,7 @@ export default function ShowDescription (showId) {
                         Close
                     </button>
 
-                    <button  onClick={showId.showSeasons} className="button1">Seasons</button>
+                    <button  onClick={showId.showSeasons} className="button">Seasons</button>
                 </div>
             </div>
         </div>
