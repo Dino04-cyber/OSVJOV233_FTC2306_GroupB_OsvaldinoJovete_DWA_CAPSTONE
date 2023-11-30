@@ -8,14 +8,15 @@ import LoginPage from './components/LoginPage';
 function App() {
   return (
     <div>
+      <Router>
+        {
+          <Routes>
+            <Route path="/" element={<LoginPage />} />
+          </Routes>
+        }
+      </Router>
       <Navbar />
       <PodcastList />
-
-      <Router>
-        {<Routes>
-          <Route path="/" element={<LoginPage />} />
-        </Routes>}
-      </Router>
     </div>
   );
 }
