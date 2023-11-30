@@ -8,8 +8,23 @@ export default function Carousel() {
     const [seasonButton, setSeasonButton] = React.useState(null)
     const [openDialog, setOpenDialog] = React.useState(false)
 
-    const maxImages = 15;
-    const displayedCarousel = carousel.slice(0, maxImages)
+    const shuffleArray = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      };
+      
+      // ...
+      
+      // In your component
+      const shuffledCarousel = shuffleArray(carousel);
+      
+      // Set the number of random images you want to display
+      const maxImages = 15;
+      const displayedCarousel = shuffledCarousel.slice(0, maxImages);
+      
 
 
     React.useEffect(() => {

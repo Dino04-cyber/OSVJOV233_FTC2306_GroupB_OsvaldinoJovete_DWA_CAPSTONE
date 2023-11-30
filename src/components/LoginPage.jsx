@@ -63,8 +63,6 @@ export function LoginPage() {
           socialButtonSize="large"
         />
       </header>
-      {/* Display the red constant here */}
-      <h2 id="welcomeMessage">Welcome, </h2>
     </div>
   );
 }
