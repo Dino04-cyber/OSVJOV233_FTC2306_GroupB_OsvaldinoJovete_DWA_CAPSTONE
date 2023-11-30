@@ -56,7 +56,7 @@ export default function Search({ onSearch }) {
      * or performs a search using the Fuse instance and updates the searchResults state.
      */
     const handleSearchClick = () => {
-        // Checks if search query is empty, if it is, sets the searchResults state to empty array
+        // Checks if search query is empty if it is sets the searchResults state to empty array
         if (searchQuery.trim() === "") {  
             setSearchResults([]);
             onSearch(podcasts)
