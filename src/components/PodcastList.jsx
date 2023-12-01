@@ -2,7 +2,7 @@ import React from "react"
 import Loading from "./Loading"
 import ShowDescription from "./ShowDescription"
 import Carousel from "./Carousel"
-import ShowSeasonsModal from "./ShowSeasonsModal"
+import ShowSeasons from "./ShowSeasons"
 import Sort from "./Sort"
 import Search from "./Search"
 import Navbar from "./Navbar"
@@ -125,7 +125,7 @@ export default function PodcastList() {
 
 
                 {openDialog && (
-                    <ShowSeasonsModal
+                    <ShowSeasons
                         seasonId={seasonButton}
                         openDialog={openDialog}
                         onClose={onCloseDialog}

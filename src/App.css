@@ -7,6 +7,15 @@ body {
   background-color: black;
 }
 
+/*Footer Styles*/
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #6432C9;
+  margin-top: 20px;
+  padding: 30px 0;
+  }
 /* Sorting Styles */
 .sort {
   margin-bottom: 10px;

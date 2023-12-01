@@ -8,9 +8,9 @@ import PropTypes from "prop-types"
  * @param {string} props.seasonId - The ID of the selected season.
  * @param {boolean} props.openDialog - indicates whether the dialog is open or not.
  * @param {function} props.onClose - Callback function to close the modal.
- * @returns {JSX.Element} JSX element representing the ShowSeasonsModal component.
+ * @returns {JSX.Element} JSX element representing the ShowSeasons component.
  */
-export default function ShowSeasonsModal({ seasonId, openDialog, onClose }) {
+export default function ShowSeasons({ seasonId, openDialog, onClose }) {
     const [showSeasons, setShowSeasons] = React.useState(null) // Holds the data of the selected show's seasons and episodes
     const [selectedSeason, setSelectedSeason] = React.useState("") // Tracks the selected season 
     const [error, setError] = React.useState("")
@@ -83,7 +83,7 @@ export default function ShowSeasonsModal({ seasonId, openDialog, onClose }) {
                 ))}
             </select>
 
-            <button onClick={onClose} className="season-close">
+            <button onClick={onClose} className="button">
                 Close
             </button>
                     
@@ -114,7 +114,7 @@ export default function ShowSeasonsModal({ seasonId, openDialog, onClose }) {
     );
 }
 
-ShowSeasonsModal.propTypes = {
+ShowSeasons.propTypes = {
     seasonId: PropTypes.string,
     openDialog: PropTypes.bool.isRequired,
     onClose: PropTypes.func.isRequired,

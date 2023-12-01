@@ -1,6 +1,6 @@
 import React from "react"
 import ShowDescription from "./ShowDescription"
-import ShowSeasonsModal from "./ShowSeasonsModal"
+import ShowSeasons from "./ShowSeasons"
 
 export default function Carousel() {
     const [carousel, setCarousel] = React.useState([])
@@ -84,7 +84,7 @@ export default function Carousel() {
             )}
 
             {openDialog && (
-                <ShowSeasonsModal
+                <ShowSeasons
                     seasonId={seasonButton}
                     openDialog={openDialog}
                     onClose={onCloseDialog}
