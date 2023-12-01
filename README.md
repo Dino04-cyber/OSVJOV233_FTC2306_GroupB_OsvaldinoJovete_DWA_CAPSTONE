@@ -16,7 +16,7 @@ Sloptify is a podcast app designed to provide an immersive audio experience. Exp
 
 ### Deployment
 
-The project is deployed using Netlify. You can access the live version [here](sloptify.netlify.app ).
+The project is deployed using Netlify. You can access the live version [Sloptify](https://sloptify.netlify.app/) .
 
 ## Known Issues
 
