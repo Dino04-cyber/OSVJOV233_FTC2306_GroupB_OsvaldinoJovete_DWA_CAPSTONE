@@ -16,12 +16,9 @@ export default function Carousel() {
         return array;
       };
       
-      // ...
-      
-      // In your component
       const shuffledCarousel = shuffleArray(carousel);
       
-      // Set the number of random images you want to display
+      // Set the number of random images
       const maxImages = 15;
       const displayedCarousel = shuffledCarousel.slice(0, maxImages);
       
@@ -57,7 +54,6 @@ export default function Carousel() {
 
     return (
         <div className="carousel-box">
-            <h4></h4> {/* to be decided*/}
 
             {displayedCarousel.map(show => (
                 <div key={show.id} className="carousel">

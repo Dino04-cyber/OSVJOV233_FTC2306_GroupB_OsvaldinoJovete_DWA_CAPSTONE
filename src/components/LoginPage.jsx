@@ -19,7 +19,7 @@ export function LoginPage() {
         if (event === "SIGNED_IN") {
           console.log("User signed in:", session.user);
           const red = session.user.email.split("@")[0].toUpperCase();
-          console.log("AIIINT NO ", red);
+          console.log("User", red);
 
           // Display the red constant in the h2 element
           const welcomeMessage = document.getElementById("welcomeMessage");
